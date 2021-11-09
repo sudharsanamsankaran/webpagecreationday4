@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEHRU Electronics</title>
+        <link rel="icon" type="image/png" href="logo.png" width="100px" height="100px">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body class="other">
+    <header>
+        <img src="logo.png" width="70px" height="40px">
+        NEHRU Electronics - The product know value</header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a  href="indexpage.html">Home</a></li> 
+                    <li><a  href="aboutus.html">About</a></li>
+                    <li><a class="active" href="productpage.html">Products</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </div>
+    <section>
+        <img class="mySlides" src="homepage.png" style="width:100%">
+        <img class="mySlides" src="indeximg.jfif" style="width:100%">
+        <img class="mySlides" src="iphoneindex.jfif" style="width:100%">
+      </section>
+      
+      <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+      </script>
+      </body>
+</html>
